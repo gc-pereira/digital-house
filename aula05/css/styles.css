@@ -1,0 +1,92 @@
+body {
+    background:#eee; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto 20px auto 20px;
+}
+
+.conteiner{
+    width: 1200px;
+    border:solid 3px red;
+    text-align: justify;
+    display: inline-flex;
+}
+
+.cabecalho{
+    width: 1200px;
+    border:solid 3px black;
+    text-align: center;
+}
+
+#titulo{
+    font-size: 1.750em;
+}
+
+#paragrafo{
+    font-size:0.813em;   
+}
+
+p span {
+    font-size: 1em;
+}
+
+.um{
+    border: solid 1px #666; 
+    padding: 5px 10px;
+    width: 20.834%;
+}
+
+.dois{
+    border: solid 1px #666; 
+    padding: 5px 10px;
+    width: 66.666%;
+    margin-left: 2.083%;
+    margin-right: 2.083%;
+}
+
+.tres{
+    border: solid 1px #666; 
+    padding: 5px 10px;
+    width: 8.333%;
+}
+
+@media screen and (min-width:450px) and (max-width:1500px){
+    .cabecalho{
+        width: 90%;
+    }
+    .conteiner{
+        margin: 20px;
+        width: 95%;
+    }
+    .um{
+        width: 40%;
+        float: left;
+    }
+    .dois{
+        width: 55%;
+        float: right;
+        margin: 0px;
+    }
+    .tres{
+        width: 5%;
+        float:none;
+    }
+    
+
+}
+
+@media screen and (max-width:450px){
+    .cabecalho{
+        width: 95%;
+    }
+    .conteiner{
+        width: 95%;
+        flex-direction: column;
+        display: block;
+    }
+    .caixa{
+        float: none;
+        width: 95%;
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+}
