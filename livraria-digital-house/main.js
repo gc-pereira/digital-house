@@ -30,3 +30,21 @@ function passador(indicador){
     slide[indice-1].style.display = "block";
     pontos[indice-1].className = pontos[indice-1].className + " ball-color"
 }
+
+//MENU
+
+var div = document.querySelector('div');
+var button = document.getElementById("dh_menu_btn");
+
+var counter = 0;
+button.onclick = function (){
+    counter++;
+    if(counter % 2 != 0){
+        div.classList.remove("menu_escondida");
+        div.classList.add("menu");
+    }
+    else{
+        div.classList.remove("menu");
+        div.classList.add("menu_escondida");
+    }
+}

@@ -223,6 +223,41 @@ body {
     background-color: #bbb;
 }
 
+.menu {
+    max-width: 100%;
+    height: 10%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: #F71735;
+    color: white;
+    font-size: 25px;
+    transition: filter .3s;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    z-index: 1;
+}
+
+.menu a{
+    margin-left: 5%;
+    transition: 1s;
+    font-family: "Mulish",sans-serif;
+    padding: 5px;
+}
+
+.menu_escondido{
+    height: 0px;
+}
+
+.menu a:hover{
+    border-radius: 5px;
+    background-color: #f7425a;
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
 footer {
     width: 100%;
     height: 80px;
