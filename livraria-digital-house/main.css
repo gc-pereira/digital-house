@@ -129,25 +129,36 @@ body {
     height: 400px;
     margin: 10px 0;
     position: relative;
+    transition: .7s;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
 
 .overlay {
-    width: 300px;
+    /*width: 300px;
     height: 400px;
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;
-    z-index: 5;
-
-    background-color: #7777;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     padding: 10px;
-    box-sizing: border-box;
+    box-sizing: border-box;*/
+    display: none;
+}
+
+.styleDescription {
+    background-color: #d3d3d395;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .slide {
@@ -202,11 +213,11 @@ body {
   
 .proximo {
     border-radius: 3px 0 0 3px;
-    left: 70%;
+    left: 62%;
 }
 
 .anterior{
-    left: 30%;
+    left: 35%;
 }
 
 .anterior:hover, .proximo:hover {
@@ -220,7 +231,7 @@ body {
     margin-bottom: 2%;
     margin: 0px;
     text-align: center;
-    background-color: #bbb;
+    background-color: rgba(0,0,0,0.8);
 }
 
 .menu {
@@ -237,7 +248,8 @@ body {
     text-align: center;
     display: inline-block;
     padding: 10px;
-    z-index: 1;
+    z-index: 5;
+    display: block;
 }
 
 .menu a{
@@ -245,10 +257,11 @@ body {
     transition: 1s;
     font-family: "Mulish",sans-serif;
     padding: 5px;
+    font-size: 20px;
 }
 
 .menu_escondido{
-    height: 0px;
+    z-index: -20;
 }
 
 .menu a:hover{
@@ -266,6 +279,33 @@ footer {
     justify-content: center;
     align-items: center;
     color: #EEE0CB;
+    font-family: "Mulish";
+}
+
+div.button{
+    text-align: center;
+    margin-top: 3%;
+}
+
+div.button button{
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    background-color: #F71735;
+    border-radius: 7px;
+    border: none;
+    padding: 5px;
+    color: #EEE0CB;
+    transition: 0.7s;
+}
+
+div.button button:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#img{
+    width: 300px;
+    height: 400px;
+
 }
 
 @media(min-width: 1498px) {
