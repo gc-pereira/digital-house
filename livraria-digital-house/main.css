@@ -236,7 +236,7 @@ body {
 
 .menu {
     max-width: 100%;
-    height: 10%;
+    height: 10% !important; 
     position: relative;
     border: none;
     border-radius: 5px;
@@ -244,7 +244,8 @@ body {
     background-color: #F71735;
     color: white;
     font-size: 25px;
-    transition: filter .3s;
+    transition: filter .3s !important;
+    transition: heigth .3s !important;
     text-align: center;
     display: inline-block;
     padding: 10px;
@@ -260,8 +261,10 @@ body {
     font-size: 20px;
 }
 
-.menu_escondido{
-    z-index: -20;
+#menu_escondido{
+    height: 0px;
+    font-size: 0px;
+    transition: heigth .3s !important;
 }
 
 .menu a:hover{

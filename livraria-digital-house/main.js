@@ -58,11 +58,19 @@ button.onclick = function (){
 }*/
 
 function myFunction() {
-    var x = document.getElementsByClassName("menu");
-    if (x.style.display === "none") {
-      x.style.display = "block";
+    var element = document.getElementById("menu_escondido");
+  
+    if (element.classList) { 
+      element.classList.toggle("menu");
     } else {
-      x.style.display = "none";
+      var classes = element.className.split(" ");
+      var i = classes.indexOf("menu");
+  
+      if (i >= 0) 
+        classes.splice(i, 1);
+      else 
+        classes.push("menu");
+        element.className = classes.join(" "); 
     }
   }
 
